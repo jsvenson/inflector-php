@@ -58,10 +58,10 @@ class Inflector {
   private static $irregular = array(
     array('zombie', 'zombies'),
     array('cow', 'cattle'),
-    array('move',   'moves'),
-    array('sex',    'sexes'),
-    array('child',  'children'),
-    array('man',    'men'),
+    array('move', 'moves'),
+    array('sex', 'sexes'),
+    array('child', 'children'),
+    array('man', 'men'),
     array('person', 'people')
   );
   
