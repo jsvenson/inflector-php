@@ -172,7 +172,7 @@ class Inflector {
     for ($i=0; $i < count(self::$plural); $i++) { 
       $regex   = self::$plural[$i][0];
       $replace = self::$plural[$i][1];
-      if (preg_match($regex, $word) > 0)
+      if (preg_match($regex, $word) !== false)
         return preg_replace($regex, $replace, $word);
     }
   }    
@@ -194,7 +194,7 @@ class Inflector {
     for ($i=0; $i < count(self::$singular); $i++) { 
       $regex   = self::$singular[$i][0];
       $replace = self::$singular[$i][1];
-      if (preg_match($regex, $word) > 0)
+      if (preg_match($regex, $word) !== false)
         return preg_replace($regex, $replace, $word);
     }
   }
